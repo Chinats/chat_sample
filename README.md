@@ -1,24 +1,13 @@
-# README
+# Chat Sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
+Sample app for using Hotwire & Tailwind CSS for Rails.   
+It's based on [Hotwire: The Demo](https://youtu.be/eKY-QES1XQQ).
 
-Things you may want to cover:
+- [hotwired/hotwire-rails: Use Hotwire in your Ruby on Rails app](https://github.com/hotwired/hotwire-rails)
+- [rails/tailwindcss-rails](https://github.com/rails/tailwindcss-rails)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Environment
+Ruby 3.0.0  
+Rails 6.1.1
+macOS 11.1
