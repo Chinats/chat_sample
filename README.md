@@ -15,6 +15,8 @@ macOS 11.1
 ### Setup
 
 ```
+$ brew install redis
+$ redis-server
 $ bundle install --path vendor/bundle
 $ rails s
 ```
