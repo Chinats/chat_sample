@@ -15,6 +15,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="h-screen bg-blue-50">
+      <header class="mb-5 bg-blue-600">
+        <div class="p-2 bg-black bg-opacity-75">
+          <h1 class="text-lg text-white">Chat Sample</h1>
+        </div>
+      </header>
+      <div class="flex justify-around">
+        <div class="w-10/12 p-5 rounded-md bg-white">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

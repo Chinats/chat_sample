@@ -4,7 +4,7 @@
   <%= form_with(model: [@message.room, @message], data: { controller: "reset_form", action: "turbo:submit-end->reset_form#reset" }) do |form| %>
     <div class="field">
       <%= form.text_field :content %>
-      <%= form.submit "Send" %>
+      <%= form.submit "Send", class: 'transition duration-500 px-3 py-2 rounded-md bg-blue-700 text-white cursor-pointer hover:bg-blue-200' %>
     </div>
   <% end %>
 <% end %>

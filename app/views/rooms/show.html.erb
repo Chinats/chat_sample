@@ -5,11 +5,13 @@
 <%= turbo_frame_tag "room" do %>
   <%= render @room %>
 
-  <%= link_to 'Edit', edit_room_path(@room) %> |
-  <%= link_to 'Back', rooms_path, "data-turbo-frame": "_top" %>
+  <div class="mb-4">
+    <%= link_to 'Edit', edit_room_path(@room), class: 'mr-3 text-gray-500 hover:text-blue-500' %>
+    <%= link_to 'Back', rooms_path, "data-turbo-frame": "_top", class: 'text-gray-500 hover:text-blue-500' %>
+  </div>
 <% end %>
 
-<div id="messages">
+<div id="messages" class="mb-4">
   <%= render @room.messages %>
 </div>
 

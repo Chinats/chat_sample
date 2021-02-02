@@ -1,27 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Rooms</h1>
+<h1 class="mb-4 text-lg font-bold">Rooms</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<ul class="mb-8">
+  <% @rooms.each do |room| %>
+    <li class="mb-4 p-2 border-2 border-blue-100">
+      <%= room.name %>
+      <div>
+        <%= link_to 'Show', room, class: 'mr-2 text-gray-500 hover:text-blue-500' %>
+        <%= link_to 'Edit', edit_room_path(room), class: 'mr-2 text-gray-500 hover:text-blue-500' %>
+        <%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' }, class: 'text-gray-500 hover:text-blue-500' %>
+      </div>
+    </li>
+  <% end %>
+</ul>
 
-  <tbody>
-    <% @rooms.each do |room| %>
-      <tr>
-        <td><%= room.name %></td>
-        <td><%= link_to 'Show', room %></td>
-        <td><%= link_to 'Edit', edit_room_path(room) %></td>
-        <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Room', new_room_path %>
+<%= link_to 'New Room', new_room_path, class: 'transition duration-500 px-3 py-2 rounded-md bg-blue-700 text-white hover:bg-blue-200 hover:text-blue-700' %>

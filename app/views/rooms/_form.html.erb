@@ -11,12 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="mb-4">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="mb-4">
+    <%= form.submit class: 'transition duration-500 px-3 py-2 rounded-md bg-blue-700 text-white cursor-pointer hover:bg-blue-200 hover:text-blue-700' %>
   </div>
 <% end %>
